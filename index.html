@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+ 
+  </style>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-gray-100">
+<div class="text-2xl font-bold leading-7">Your Memory Game <span class="text-gray-500">Started</span></div>
+  <div id="timer" class="text-2xl mb-4">Time: 0 seconds</div>
+
+  <div id="game-board" class="flex flex-wrap justify-center">
+    
+  </div>
+
+
+  <div id="game-over-popup" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded shadow-lg text-center">
+      <h2 class="text-xl font-semibold mb-4">Game Over!</h2>
+      <p id="time-taken" class="mb-6"></p>
+      <button id="restart-button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Restart Game</button>
+    </div>
+  </div>
+
+  <div class="mb-6 md:mb-0"  style="margin-top:100px">
+    <a href="#" class="flex items-center">
+        <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" class="h-8 me-3" alt="github logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SOURCE CODE</span>
+    </a>
+</div>
+  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">SanjaySarvah</span>
+  <script src="script.js"></script>
+</body>
+</html>
